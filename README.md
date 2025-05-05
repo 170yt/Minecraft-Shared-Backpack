@@ -4,6 +4,8 @@ It is used to share items on friendly multiplayer servers.
 
 The Shared Backpack is the size of a double chest (54 slots) and can be accessed by using the `/backpack` or `/bp` command (no permission required).
 
+![Shared Backpack Inventory](images/Shared-Backpack-Inventory.png)<br>
+
 ### Additional Information
 This is a server-side mod and does not need to be installed on the client.
 
