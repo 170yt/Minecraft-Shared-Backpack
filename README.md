@@ -11,4 +11,4 @@ The Shared Backpack is the size of a double chest (54 slots) and can be accessed
 
 This is a server-side mod and does not need to be installed on the client.
 
-The content of the Shared Backpack is stored with the world files at `/world/data/shared-backpack.dat`.
+The content of the Shared Backpack is stored with the world files at `/world/data/shared-backpack/shared-backpack.dat`.

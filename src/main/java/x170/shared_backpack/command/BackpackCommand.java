@@ -10,7 +10,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.inventory.ChestMenu;
 import x170.shared_backpack.SharedBackpack;
-import x170.shared_backpack.inventory.SavedBackpackInventory;
+import x170.shared_backpack.inventory.BackpackInventory;
 
 public abstract class BackpackCommand {
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher, CommandBuildContext commandBuildContext, Commands.CommandSelection commandSelection) {
@@ -33,7 +33,7 @@ public abstract class BackpackCommand {
 
         player.openMenu(
                 new SimpleMenuProvider((syncId, playerInventory, playerx) ->
-                        ChestMenu.sixRows(syncId, playerInventory, SavedBackpackInventory.getSavedBackpackInventory(SharedBackpack.SERVER).getBackpackInventory()),
+                        ChestMenu.sixRows(syncId, playerInventory, BackpackInventory.getContainer(SharedBackpack.SERVER)),
                         SharedBackpack.BACKPACK_NAME
                 )
         );
